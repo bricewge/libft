@@ -1,0 +1,100 @@
+# -*- org-pretty-entities-include-sub-superscripts: nil; -*-
+#+TITLE: libft
+
+* Part 1 - Fonctions de la libc [0/28]
+
+- [-] ft_memset
+- [-] ft_bzero
+- [ ] ft_memcpy
+- [ ] ft_memccpy
+- [ ] ft_memmove
+- [ ] ft_memchr
+- [ ] ft_memcmp
+- [-] ft_strlen
+- [-] ft_strdup
+- [-] ft_strcpy
+- [ ] ft_strncpy
+- [-] ft_strcat
+- [ ] ft_strncat
+- [ ] ft_strlcat
+- [ ] ft_strchr
+- [ ] ft_strrchr
+- [ ] ft_strstr
+- [ ] ft_strnstr
+- [-] ft_strcmp
+- [ ] ft_strncmp
+- [-] ft_atoi
+- [-] ft_isalpha
+- [-] ft_isdigit
+- [-] ft_isalnum
+- [ ] ft_isascii
+- [ ] ft_isprint
+- [-] ft_toupper
+- [-] ft_tolower
+
+* Part 2 - Fonctions supplémentaires [0/24]
+
+- [ ] ft_memallo
+- [ ] ft_memdel
+- [ ] ft_strnew
+- [ ] ft_strdel
+- [ ] ft_strclr
+- [ ] ft_striter
+- [ ] ft_striteri
+- [ ] ft_strmap
+- [ ] ft_strmapi
+- [ ] ft_strequ
+- [ ] ft_strnequ
+- [ ] ft_strsub
+- [ ] ft_strjoin
+- [ ] ft_strtrim
+- [ ] ft_strsplit
+- [-] ft_itoa
+- [-] ft_putchar
+- [-] ft_putstr
+- [ ] ft_putendl
+- [-] ft_putnbr
+- [ ] fut_putchar_fd
+- [ ] ft_putstr_fd
+- [ ] ft_putendl_fd
+- [ ] ft_putnbr_fd
+
+* Partie bonus [0/6]
+
+- [ ] ft_lstnew
+- [ ] ft_lstdone
+- [ ] ft_lstdel
+- [ ] ft_lstadd
+- [ ] ft_lstiter
+- [ ] ft_lstmap
+
+** Bonus perso
+- [-] ft_isupper
+- [-] ft_islower
+
+* Notes
+
+** Ressources
+- https://www.gnu.org/software/libc/manual/html_mono/libc.html
+- Linux System Programming
+
+** TODO Lire [[https://openclassrooms.com/courses/le-typage-presentation-thematique-et-historique][article sur le typage]]
+
+** TODO S'informer sur les [[http://codingfreak.blogspot.com/2010/06/static-functions-in-c.html][fonctions statiques]]
+** TODO Faire des tests [0/12]
+- [ ] Fichier auteur avec =\n=
+- [ ] Un seul fichier =.h= à la racine
+- [ ] Tous les tous prototypes, macros et typedefs sont dans le =.h=
+- [ ] Une fichier =.c= par fonction
+- [ ] Les fonctions ne quittent pas façon inattendue : Segmentation
+  fault, bus error, double free, etc
+  - Test qu'après malloc la variable n'est pas =NULL=
+- [ ] Le code est à la norme
+- [ ] Toute mémoire allouée doit être =free=
+- [ ] =Makefile= contient les règles : =$(NAME)=, =all=, =clean=,
+  =fclean= et =re=
+- [ ] =Makefile= crée une bibliothèque statique nommée =libft.a=
+- [ ] Compilation avec les flags : =-Wall=, =-Wextra= et =-Werror=
+- [ ] Uniquement les fonctions =malloc=, =free= et =write= de la
+  =libc= sont utilisées
+- [ ] ...
