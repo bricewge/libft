@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@sutdent.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 14:17:53 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/20 14:53:46 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 14:41:26 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii (int c)
+int		ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
