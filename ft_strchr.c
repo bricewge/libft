@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/21 13:27:53 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 14:15:58 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 15:35:25 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int i;
-
-	i = -1;
-	while (s[++i])
-		if (s[i] == (char)c)
-			return (&((char *)s)[i]);
+	--s;
+	while (*++s)
+		if (*s == (char)c)
+			return ((char *)s);
 	if ((char)c == '\0')
-		return (&((char *)s)[i]);
+		return ((char *)s);
 	return (NULL);
 }
