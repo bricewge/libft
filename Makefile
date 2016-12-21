@@ -6,7 +6,7 @@
 #    By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/07/18 09:48:23 by bwaegene          #+#    #+#              #
-#    Updated: 2016/12/19 16:45:39 by bwaegene         ###   ########.fr        #
+#    Updated: 2016/12/21 14:18:28 by bwaegene         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -19,7 +19,7 @@ NAME = libft.a
 SOURCES = $(shell ls | grep ^ft_ | grep '\.c$$')
 OBJECTS = $(shell ls | grep ^ft_ | grep '\.c$$' | sed 's/\.c$$/.o/')
 
-HEADERS = ft.h
+HEADERS = libft.h
 
 all: $(NAME)
 

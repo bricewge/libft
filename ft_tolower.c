@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@sutdent.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 15:01:37 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/19 17:26:06 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 14:15:55 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 int		ft_tolower(int c)
 {

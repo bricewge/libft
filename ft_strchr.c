@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/21 13:27:53 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 13:53:37 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 14:15:58 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

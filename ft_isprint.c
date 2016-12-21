@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@sutdent.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/20 14:21:59 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/20 14:55:24 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 14:15:59 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 int		ft_isprint(int c)
 {

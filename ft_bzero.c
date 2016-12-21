@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@sutdent.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 14:35:47 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/19 15:18:03 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 14:15:59 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
