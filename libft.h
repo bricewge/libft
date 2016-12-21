@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 14:51:27 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 17:10:19 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@
 typedef	unsigned char	t_byte;
 int		ft_putchar(int c);
 int		ft_strcmp(char *s1, char *s2);
-int		ft_strlen(char *str);
 void	ft_swap(int *a, int *b);
-char	*ft_strcpy(char *dest, char *src);
-char	*ft_strdup(char *src);
 /*
 ** First part
 */
@@ -29,6 +26,9 @@ void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_strlen(char *str);
+char	*ft_strdup(char *src);
+char	*ft_strcpy(char *dest, char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcat(char *dest, char *src);
