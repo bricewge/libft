@@ -6,7 +6,7 @@
 /*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/20 15:18:14 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/21 12:57:28 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ char	*ft_strdup(char *src);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
