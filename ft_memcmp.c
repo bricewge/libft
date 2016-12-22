@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/22 09:57:43 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/22 10:18:56 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/22 13:18:18 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	tmp1 = (t_byte *)--s1;
 	tmp2 = (t_byte *)--s2;
 	while (++i < n)
-	{
 		if (*++tmp1 != *++tmp2)
 			return (*tmp1 - *tmp2);
-	}
 	return (0);
 }
