@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/22 10:23:05 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/22 10:30:31 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@
 # include <stdlib.h>
 
 typedef	unsigned char	t_byte;
-int		ft_putchar(int c);
-int		ft_strcmp(char *s1, char *s2);
-void	ft_swap(int *a, int *b);
 /*
 ** First part
 */
@@ -33,6 +30,7 @@ char	*ft_strcpy(char *dest, char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcat(char *dest, char *src);
+int		ft_strcmp(char *s1, char *s2);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -47,9 +45,11 @@ int		ft_atoi(char *str);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
 char	*ft_itoa(int nb);
+int		ft_putchar(int c);
 /*
 ** Bonus functions
 */
 int		ft_isupper(int c);
 int		ft_islower(int c);
+void	ft_swap(int *a, int *b);
 #endif
