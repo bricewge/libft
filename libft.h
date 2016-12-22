@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/22 10:30:31 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/22 10:55:24 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcat(char *dest, char *src);
 int		ft_strcmp(char *s1, char *s2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
