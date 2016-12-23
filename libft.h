@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/22 10:55:24 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/23 11:32:42 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strlen(char *str);
 char	*ft_strdup(char *src);
-char	*ft_strcpy(char *dest, char *src);
+char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
@@ -46,7 +46,7 @@ int		ft_tolower(int c);
 /*
 ** Second part
 */
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
 char	*ft_itoa(int nb);

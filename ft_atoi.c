@@ -6,13 +6,13 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 14:35:06 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 15:16:05 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/22 16:56:12 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int		ft_atoi(const char *str)
 {
 	int		i;
 	int		result;
