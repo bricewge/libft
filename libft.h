@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/24 17:43:03 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/24 17:55:34 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int		ft_tolower(int c);
 ** Second part
 */
 void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
 int		ft_atoi(const char *str);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
