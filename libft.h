@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/23 15:27:47 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/24 10:31:38 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int		ft_atoi(const char *str);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
 char	*ft_itoa(int nb);
-int		ft_putchar(int c);
+void	ft_putchar(int c);
 /*
 ** Bonus functions
 */

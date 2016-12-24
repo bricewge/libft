@@ -6,14 +6,13 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/21 14:43:06 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 14:43:07 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/24 11:05:11 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_putchar(int c)
+void	ft_putchar(int c)
 {
 	write(1, &c, 1);
-	return (c);
 }
