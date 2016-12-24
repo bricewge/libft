@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/23 15:21:36 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/23 17:10:37 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/24 16:45:05 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t		i;
-	size_t		j;
+	size_t len_initial_dst;
+	size_t len_src;
+	size_t i;
 
-	i = ft_strlen(dst);
-	j = 0;
-	while (i + j < size - 1)
+	len_initial_dst = ft_strlen(dst);
+	len_src = ft_strlen((char *)src);
+	i = 0;
+	while (src[i] && size && i + len_initial_dst < size - 1)
 	{
-		dst[i + j] = src[j];
-		++j;
+		dst[i + len_initial_dst] = src[i];
+		i++;
 	}
-	dst[i + j] = '\0';
-	return (sizeof(dst) + sizeof(src));
+	if (!(len_initial_dst > size))
+		dst[len_initial_dst + i] = '\0';
+	return (len_src + (size < len_initial_dst ? size : len_initial_dst));
 }
