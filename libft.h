@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/24 10:31:38 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/24 16:57:29 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void	ft_putchar(int c);
 /*
 ** Bonus functions
 */
+int		ft_isspace(int c);
 int		ft_isupper(int c);
 int		ft_islower(int c);
 void	ft_swap(int *a, int *b);
