@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/26 14:39:07 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/26 16:11:49 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 int		ft_atoi(const char *str);
 void	ft_putstr(char *str);
 void	ft_putnbr(int nb);
+void	ft_putendl(char const *s);
 char	*ft_itoa(int nb);
 void	ft_putchar(int c);
 /*
