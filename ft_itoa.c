@@ -6,34 +6,50 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 14:55:53 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 15:16:05 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/27 18:03:07 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_itoa(int nb)
+#include "libft.h"
+
+static int	ft_isize(int nb)
 {
-	static char str_buf[12];
-	char		*str_dup;
-	int			neg;
+	int		i;
+	int		tmp;
+
+	i = 1;
+	tmp = nb;
+	if (tmp < 0)
+		++i;
+	while ((tmp /= 10))
+		++i;
+	return (i);
+}
+
+char		*ft_itoa(int nb)
+{
+	int		i;
+	char	*result;
 
 	if (nb == -2147483648)
-		return ("-2147483648");
-	str_dup = str_buf + 11;
-	if (nb < 0)
+		return (ft_strdup("-2147483648"));
+	i = ft_isize(nb);
+	result = ft_strnew(i);
+	if (result)
 	{
-		neg = 1;
-		nb = nb * -1;
+		result[i] = '\0';
+		if (nb < 0)
+		{
+			result[0] = '-';
+			nb *= -1;
+		}
+		if (nb == 0)
+			result[0] = '0';
+		while (nb)
+		{
+			result[--i] = (nb % 10) + '0';
+			nb /= 10;
+		}
 	}
-	else
-		neg = 0;
-	while (1)
-	{
-		*--str_dup = (nb % 10) + '0';
-		nb /= 10;
-		if (!nb)
-			break ;
-	}
-	if (neg)
-		*--str_dup = '-';
-	return (str_dup);
+	return (result);
 }
