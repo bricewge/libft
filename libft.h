@@ -101,4 +101,7 @@ int						ft_isspace(int c);
 int						ft_isupper(int c);
 int						ft_islower(int c);
 void					ft_swap(int *a, int *b);
+void					ft_strswap(char **a, char **b);
+int						*ft_range(int min, int max);
+int						ft_sqrt(int nb);
 #endif
