@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/26 11:14:26 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/26 11:20:41 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/29 10:51:08 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_striter(char *s, void (*f)(char *))
 {
-	while (s && *s)
+	while (s && *s && f)
 		f(&(*s++));
 }
