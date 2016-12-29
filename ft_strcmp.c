@@ -6,11 +6,11 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 14:58:38 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/21 15:16:04 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/12/29 10:29:23 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	int		i;
 
