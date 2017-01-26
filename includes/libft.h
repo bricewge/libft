@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/16 20:40:18 by bwaegene          #+#    #+#             */
-/*   Updated: 2017/01/21 13:56:24 by bwaegene         ###   ########.fr       */
+/*   Updated: 2017/01/26 11:34:05 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,10 @@ char					*ft_strcat(char *s1, const char *s2);
 char					*ft_strncat(char *s1, const char *s2, size_t n);
 size_t					ft_strlcat(char *dst, const char *src, size_t size);
 char					*ft_strstr(const char *big, const char *little);
+/*
+** Locates the first occurrence of the null-terminated string little in the
+** string big, where not more than len characters are searched.
+*/
 char					*ft_strnstr(const char *big, const char *little,
 									size_t len);
 int						ft_strcmp(const char *s1, const char *s2);
