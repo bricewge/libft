@@ -6,7 +6,7 @@
 /*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/19 14:57:35 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/12/24 18:00:19 by bwaegene         ###   ########.fr       */
+/*   Updated: 2017/01/26 15:02:40 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,5 @@
 void	ft_putstr(char *str)
 {
 	if (str)
-	{
 		write(1, str, ft_strlen(str));
-	}
 }
