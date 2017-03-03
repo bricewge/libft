@@ -25,6 +25,7 @@ SRC_PATH =  src
 SRC_NAME =	ctype/ft_isalnum.c					\
 						ctype/ft_isalpha.c					\
 						ctype/ft_isascii.c					\
+						ctype/ft_isdigit.c					\
 						ctype/ft_islower.c					\
 						ctype/ft_isprint.c					\
 						ctype/ft_isspace.c					\
