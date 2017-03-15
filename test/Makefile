@@ -60,7 +60,7 @@ endif
 
 all: $(NAME)
 
-$(NAME): ../libunit.a $(SRC) tests.h
+$(NAME): $(LIB_PATH)/$(LIB_NAME).a  ../libft.a $(SRC) tests.h
 	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(LDLIBS) $(SRC) -o $(NAME)
 
 $(OBJ_PATH):
@@ -74,23 +74,28 @@ $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(HEADER)
 # /!\ Dirty workaround /!\
 # If make on the libft directory should rebuild something then PHONY the rule
 # libft to build it. Otherwise it relink.
-ifeq ($(shell $(MAKE) --question -C ../ ; echo $$?), 1)
-.PHONY: ../libunit.a
+ifeq ($(shell $(MAKE) --question -C $(LIB_PATH) ; echo $$?), 1)
+.PHONY: $(LIB_PATH)/$(LIB_NAME).a
 endif
 
-../libunit.a:
+$(LIB_PATH)/$(LIB_NAME).a:
 	$(MAKE) -C $(LIB_PATH)
+
+ifeq ($(shell $(MAKE) --question -C .. ; echo $$?), 1)
+.PHONY: ../libft.a
+endif
+
+../libft.a:
+	$(MAKE) -C ..
 
 test: $(NAME)
 	./$(NAME)
 
 .PHONY: clean
 clean:
-	$(MAKE) -C $(LIB_PATH) clean
 	$(RM) -r $(OBJ_PATH)
 
 fclean: clean
-	$(MAKE) -C $(LIB_PATH) fclean
 	$(RM) -r $(NAME) *.dSYM
 
 re: fclean

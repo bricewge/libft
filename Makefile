@@ -116,6 +116,10 @@ $(OBJ): | $(OBJ_PATHS)
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(HEADER)
 	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
+.PHONY: test
+test:
+	$(MAKE) -C test test
+
 .PHONY: clean
 clean:
 	$(RM) -r $(OBJ_PATH)
