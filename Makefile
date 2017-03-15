@@ -122,9 +122,13 @@ test:
 
 .PHONY: clean
 clean:
+	$(MAKE) -C lib/libunit clean
+	$(MAKE) -C test clean
 	$(RM) -r $(OBJ_PATH)
 
 fclean: clean
+	$(MAKE) -C lib/libunit fclean
+	$(MAKE) -C test fclean
 	$(RM) -r $(NAME) $(NAME).dSYM
 
 re: fclean
