@@ -1,26 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bwaegene <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bwaegene <bwaegene@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/11 14:20:14 by bwaegene          #+#    #+#             */
-/*   Updated: 2017/02/12 16:09:46 by starrit          ###   ########.fr       */
+/*   Created: 2017/01/27 12:46:05 by bwaegene          #+#    #+#             */
+/*   Updated: 2017/01/29 01:13:52 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
-#include "libunit.h"
-
-int	main(void)
+int		ft_abs(int nbr)
 {
-	int	res_test[2];
-
-	res_test[0] = 0;
-	res_test[1] = 0;
-	print_header();
-	ft_atoi_launcher(res_test);
-	ft_abs_launcher(res_test);
-	return (print_total(res_test));
+	return (nbr < 0 ? - nbr : nbr);
 }

@@ -29,4 +29,8 @@ int			medium_negative_loop_test(void);
 int			medium_positive_loop_test(void);
 int			large_negative_loop_test(void);
 int			large_positive_loop_test(void);
+void		ft_abs_launcher(int *res_test);
+int			ft_abs_positive_test(void);
+int			ft_abs_negative_test(void);
+int			ft_abs_zero_test(void);
 #endif

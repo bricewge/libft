@@ -42,7 +42,11 @@ SRC_NAME =	main.c						\
 		stdlib/ft_atoi/12_medium_negative_loop_test.c		\
 		stdlib/ft_atoi/13_medium_positive_loop_test.c		\
 		stdlib/ft_atoi/14_large_negative_loop_test.c		\
-		stdlib/ft_atoi/15_large_positive_loop_test.c
+		stdlib/ft_atoi/15_large_positive_loop_test.c		\
+		stdlib/ft_abs/00_launcher.c				\
+		stdlib/ft_abs/01_negative.c		\
+		stdlib/ft_abs/02_positive.c		\
+		stdlib/ft_abs/03_zero.c
 OBJ_PATH =  obj
 OBJ_NAME = $(SRC_NAME:.c=.o)
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
